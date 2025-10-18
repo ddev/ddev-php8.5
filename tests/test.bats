@@ -66,12 +66,11 @@ health_checks() {
 }
 
 teardown() {
-  set -eu -o pipefail
 #  echo "# LEAVING ${TESTDIR} for you" >&3
-  ddev delete -Oy "${PROJNAME}" >/dev/null 2>&1
-  [ "${TESTDIR}" != "" ] && rm -rf "${TESTDIR}"
-
+  ddev delete -Oy "${PROJNAME}" >/dev/null 2>&1 || true
+  [ "${TESTDIR}" != "" ] && rm -rf "${TESTDIR}" || true
 }
+
 
 # bats test_tags=from-directory
 @test "install from directory" {
