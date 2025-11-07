@@ -3,6 +3,8 @@
 [![last commit](https://img.shields.io/github/last-commit/ddev/ddev-php85)](https://github.com/ddev/ddev-php85/commits)
 [![release](https://img.shields.io/github/v/release/ddev/ddev-php85)](https://github.com/ddev/ddev-php85/releases/latest)
 
+# DDEV v1.24.10 now has PHP 8.5, so this add-on is archived. Until next year!
+
 # DDEV PHP 8.5 Add-on <!-- omit in toc -->
 
 This add-on provides experimental PHP 8.5 support for DDEV projects using pre-release PHP 8.5 images.
